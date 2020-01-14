@@ -19,8 +19,13 @@ char *strpcy(char *dest, char *source);
 
 main에서는 
 ```
-char a[] = "Hello"; char b[] = "Good";
+char s1[] = "Hello"; 
 
-strcpy(s2, s1);
+char s2[] = "Good";
 
-printf("%s\n", s2);
+strcpy(s1, s2);
+
+printf("%s\n", s1);
+```
+
+이렇게 하면 출력을 s1을 해도 s2안에 담겨있는 GOOD이 출력된다. 
